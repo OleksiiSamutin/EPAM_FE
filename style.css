@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto 800px 500px auto;
+    grid-template-areas: "header header"
+                         "sidebar main"
+                         "sidebar aside"
+
+                         "footer ad";
+    grid-gap: 10px;
+}
+.header h1{
+    font-size: 7em;
+    text-align: center;
+}
+article h2{
+    font-size: 4em;
+}
+.header{
+    grid-area: header
+}
+.header-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 3px solid red;
+}
+.mainFooter{
+    grid-area: footer;
+}
+.main {
+    grid-area: main;
+    border-bottom: 8px solid red;
+}
+.main figcaption{
+    font-weight: bold;
+    text-align: center;
+}
+.mainQuote{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.secondary{
+    grid-area: aside
+}
+#adCopy {
+    grid-area:ad
+}
+.politicianImage{
+    max-width: 500px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.subHeader{
+    position: relative;
+}
+.subHeader p{
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.question{
+    margin-top: 10px;
+    font-style: italic;;
+}
+figure{
+    margin: 10px 20px;
+}
+img{
+    display: block;
+    max-width: 200px;
+}
+a.rightCol{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.header time, .header a{
+    font-weight: bold;
+    font-size: 1.15em;
+    text-decoration: none;
+    color: black;
+}
+
+blockquote {
+    text-indent: 20px;
+}
+.parlamImg{
+    text-align: right;
+}
+
+.secondarySubheading{
+    font-size: 1.5em;
+
+    margin-bottom: 10px;
+}
+.secondarySubheading strong{
+    font-weight: bolder;
+}
+h3 {
+    text-align: center;
+}
+.ad .colLeft{
+    padding: 5px 20px;
+    border-left: 3px solid white;
+}
+.ad .flex-container{
+    background-color: #115191;
+    color: white;
+}
+
+.sidebar{
+    border: 3px solid #e8eadd;
+}
